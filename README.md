@@ -23,6 +23,7 @@ This will watch the project directory and restart as necessary.
 | `points` | Points in the format [x, y]. Leave blank if x[] and y[]                           |
 | `x`      | Array of x axis points. Leave blank if you are using `body.points` instead.       |
 | `y`      | Array of y axis points. Leave blank if you are using `body.points` instead.       |
+| `res`    | Returns SVG file directly if set to `svg`                                         |
 
 ```ts
 import { useCubicBezier } from "https://deno.land/x/denouse@v0.0.2/mod.ts";
@@ -46,6 +47,7 @@ if (res.status === 200) {
 ```
 
 ## Response
+
 ```ts
 interface Res {
     size: number;
@@ -56,5 +58,6 @@ interface Res {
 ```
 
 ### Available charts
+
 -   scatter
 -   line

@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
       <Head>
-        <title>Moe Counter by NeTT</title>
-        <meta name = "description" content="Counter inspired by journey-ad/Moe-counter " />
+        <title>SVG Charts by NeTT</title>
+        <meta name = "description" content="Generate SVG charts." />
         <meta name = "theme-color" content="#ff00c3" />
       </Head>
       <img

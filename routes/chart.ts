@@ -41,7 +41,7 @@ export const handler = async (
     ...res,
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="${res.viewbox}" fill="white" stroke="black" stroke-width="0.5">${res.paths.map(x => `<path d = "${x}" />`).join("")}</svg>` 
   }
-  return body.type === "svg" ? new Response(response.svg) : new Response(JSON.stringify(response));
+  return body.res === "svg" ? new Response(response.svg) : new Response(JSON.stringify(response));
 };
 
 function validateBody(body: Record<string, unknown>): {size: [number, number], x: number[], y: number[]} | Response {
