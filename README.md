@@ -34,7 +34,7 @@ const points = useCubicBezier(4000, 0.5, 0.7, 0.19, 0.96).map((x) => [
     x[1] * 100,
 ]);
 
-const res = await fetch("http://localhost:5989/chart", {
+const res = await fetch("http://svgcharts.deno.dev/chart", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ points, sent: "pairs", type: "line" }),
